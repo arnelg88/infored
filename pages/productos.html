@@ -9,15 +9,22 @@
 </head>
 <body>
     <!-- INICIO_ HEADER MENU DE NAVEGACION -->
-    <header class="header" id="header">
+    <div class="nav-bg"></div>
+    <header class="header navbar-dark navbar-pages" id="menu">
         <div class="header__logo">
-            <a href="../index.html"><img src="../images/logoTestInfo.svg" alt="Infored Argentina">
+            <a href="../index.html"><img class="logo" src="../images/logoTestInfo.svg" alt="Infored Argentina">
             </a>
         </div>
+    
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img class="menu_hambur" src="../images/icons8-menú-redondeado-100.png" alt="menu">
+            </label>
         
-        <nav class="header__menu">
+        <nav class="header__menu ">
+                         
             <ul class="menu__ul">
-                <li class="menu__titulo"><a class="menu_color" href="../index.html">INICIO</a>
+                <li class="menu__titulo active"><a class="menu_color" href="../index.html">INICIO</a>
                 </li>
                 <li class="menu__titulo"><a class="menu_color"  href="./nosotros.html">NOSOTROS</a>
                 </li>
@@ -26,7 +33,9 @@
                 </li>
                 <li class="menu__titulo"><a class="menu_color" href="./contacto.html">CONTACTO</a>
                 </li>
+    
             </ul>
+            
         </nav>
     </header>
 <!-- FIN_ HEADER MENU DE NAVEGACION -->
@@ -35,7 +44,7 @@
     <main class="contenedor__main" id="mainProductos">           
     <div class="contenedor-der">
             <div class="main__nosotros--texto">
-                <h2>Potencia el equipamiento</h2>
+                <h2 class="primer-h2">Potencia el equipamiento</h2>
                 <h2 class="juntos">de tu organización</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
