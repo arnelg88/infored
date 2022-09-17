@@ -1,0 +1,138 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    display: none;
+}
+
+.menu_hambur{
+    height: 40px;
+}
+
+.header__logo{
+    padding-left: 20px;
+    transition: all 0.3s;
+}
+
+
+.header__logo:hover{
+    transform: scale(0.95);
+}
+
+.menu__ul{
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    
+}
+
+.menu__ul .menu__titulo{
+    transition: all 0.4s;
+    height: 70px;
+
+}
+
+
+.menu__ul .menu__titulo:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu__ul .menu__titulo .menu_color{    
+    
+    display: block;
+    padding: 28px 10px 30px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    
+}
+
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+        padding-right: 20px;
+    }
+
+    .header__menu{
+        position: absolute;
+        background-color: rgba(0, 0,0, 0.8);
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        right: -100%;
+        transition: all 0.4s;
+    }
+
+    .header__menu .menu__ul{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__menu .menu__ul .menu__titulo{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .header__menu .menu__ul .menu__titulo:hover{
+        cursor: pointer;
+
+    }
+
+    .menu__ul .menu__titulo .menu_color{
+        padding: 0px;
+        font-size: larger;
+    }
+
+    #check:checked ~ .header__menu{
+        right: 0;
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+    .logo{
+        width: 150px;
+    }
+    .menu_hambur{
+        height: 35px;
+    }
+}
+
+
+
+section{
+    position: absolute;
+    background: url(../images/posterVideo.PNG) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: -1000;
+}
