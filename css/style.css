@@ -131,25 +131,6 @@
           height: 35px;
       }
 
-    .section__videoHome {
-
-            position: relative;
-            width: 100%;
-            top: 0;
-        height: 77vh;
-    }
-    .videoHome {
-        position: absolute;
-        
-        width: 100%;
-        
-        object-fit: fill;
-        
-
-        height: 84vh;
-       
-    }
-
   }
 
 /* <<<<<<<----- FIN DEL NAVBAR ------>>>>>>>>*/
