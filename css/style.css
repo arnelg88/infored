@@ -178,7 +178,7 @@
         position: relative;
         width: 100%;
         top: 0px;
-        height: calc(53vh + 70px) ;
+        height: calc(43vh + 70px) ;
       }
       .videoHome {
           position: absolute;
@@ -188,7 +188,7 @@
           object-fit: fill;
           top: 0px;
   
-          height: 60vh;
+          height: 50vh;
          
       }
   
