@@ -131,6 +131,7 @@
           height: 35px;
       }
 
+
   }
 
 /* <<<<<<<----- FIN DEL NAVBAR ------>>>>>>>>*/
@@ -151,15 +152,15 @@
     /* top: -70px; */
 }
 
-    /* @media (max-width: 480px) {
+    @media (max-width: 480px) {
     
   
       .section__videoHome {
   
-              position: relative;
-              width: 100%;
-              top: 0;
-          height: 76vh;
+        position: relative;
+        width: 100%;
+        top: 0px;
+        height: calc(66vh + 70px) ;
       }
       .videoHome {
           position: absolute;
@@ -167,13 +168,13 @@
           width: 100%;
           
           object-fit: fill;
-          
+          top: 0px;
   
-          height: 75vh;
+          height: 73vh;
          
       }
   
-    } */
+    }
 
 
 
