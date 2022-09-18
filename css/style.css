@@ -1,5 +1,5 @@
 *{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
 	padding: 0;
@@ -183,7 +183,7 @@
         position: relative;
         width: 100%;
         top: 70px;
-        height: calc(53vh + 70px) ;
+        height: calc(50vh + 70px) ;
       }
       .videoHome {
           position: relative;
@@ -207,11 +207,13 @@
  .tituloSecciones {
     text-align: center;
     font-size: xxx-large;
+    font-family: 'Days One', sans-serif;
+    font-weight: 900;
  }
 
 
  /* ------ CSS HOME/SERVICIOS  -------*/
-
+/*
  .main__contenedor{
     margin: 50px 30px 0 30px;
     
@@ -230,9 +232,7 @@
  }
 
  .contenedor-servicio{
-    /*border: 1px;
-    border-style: solid;
-    border-radius: 20px;*/
+
     width: 20%;
     height: auto;
     margin: 20px;
@@ -268,15 +268,121 @@
     color: black;
     font-size: xx-large;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
  }
 
 .servicio__descripcion{
     margin-top: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: large;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}*/
+
+
+
+
+
+
+
+
+.main__contenedor{
+    margin: 50px 30px 0 30px;
 }
+
+.main__servicios{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contenedor-servicio{
+
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    min-width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+ }
+
+.contenedorServicioImg{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: #03045E;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+
+ .servicio__image{
+    
+    background-color: #03045E;
+    margin:auto;
+    position: absolute;
+    left: 50px;
+    top: 25%;
+
+    
+}
+
+.servicio__titulo{
+    color: black;
+    font-size: xx-large;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+ }
+
+.servicio__descripcion{
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: large;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (max-width: 1420px){
+    .main__servicios{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         
+       
+    }
+
+}
+
+@media (max-width: 760px){
+    .main__servicios{
+
+        display: grid;
+        grid-template-columns: 1fr;
+         
+       
+    }
+
+}
+
+
+
+
+
+
+
+
+
  /* ------ FIN CSS HOME/SERVICIOS  -------*/
 
 
@@ -313,6 +419,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: white;
+    box-shadow: 7px 5px 6px -1px rgba(0,0,0,0.59);
+
 }
 
  .card-top{
@@ -383,8 +491,9 @@ margin: 0px 5px 5px 5px;
 
 /* ------CSS HOME/CLIENTES  -------*/
  .seccion__clientes{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    padding: 50px 30px 0px 20px
  }
 
  .clientes__slider{
@@ -893,6 +1002,12 @@ font-style: normal;
 
 .primer-h2{
     text-align: start;
+    font-family: 'Poppins', sans-serif;
+}
+
+.parrafo-main{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;  
 }
 
 .destacados__imagen{
