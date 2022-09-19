@@ -136,7 +136,7 @@
 
       .navbar-index{
         position: fixed;
-        background-color: #000;
+        background-color: #212529;
         top: 0;
       }
 
@@ -211,6 +211,13 @@
     font-weight: 900;
  }
 
+
+
+@media (max-width: 480px) {
+    .tituloSecciones {
+    font-size: xx-large;
+}
+}
 
  /* ------ CSS HOME/SERVICIOS  -------*/
 /*
@@ -507,9 +514,9 @@ margin: 0px 5px 5px 5px;
     flex-wrap: wrap;
     justify-content: center;
     */
-    
+    margin: 0;
     margin-top: 50px;
-    padding: 15px 50px;
+    padding: 15px 50px 0px 50px;
     text-align: center;
 }
 
@@ -556,6 +563,7 @@ margin: 0px 5px 5px 5px;
 .footer__listado{
     list-style: none;
     font-size: 12px;
+    padding-left: 10px;
     
 }
 
@@ -578,6 +586,19 @@ margin: 0px 5px 5px 5px;
     text-align: center;
     color: #ffffff;
     font-size: small;
+}
+
+
+@media (max-width: 480px){
+    .contenedor-footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .footer__listado{
+        padding: 0;
+    }
 }
 
 /* -----  INICIO DE CSS PAGINA DE NOSOTROS  ------*/
