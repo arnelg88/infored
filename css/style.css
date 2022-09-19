@@ -427,7 +427,12 @@
     padding-bottom: 20px;
     background-color: white;
     box-shadow: 7px 5px 6px -1px rgba(0,0,0,0.59);
+    transition: all 0.3s;
+}
 
+
+.contenedor-card-testimonio:hover{
+    transform: scale(1.06)
 }
 
  .card-top{
