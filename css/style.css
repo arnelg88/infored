@@ -332,9 +332,13 @@
     
  }
 
+ .contenedorServicioImg:hover{
+    background-color:#023E8A;
+ }
+
  .servicio__image{
     
-    background-color: #03045E;
+   /*  background-color: #03045E; */
     margin:auto;
     position: absolute;
     left: 50px;
