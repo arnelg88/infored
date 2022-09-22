@@ -213,6 +213,7 @@
     font-size: xxx-large;
     font-family: 'Days One', sans-serif;
     font-weight: 900;
+    margin: 0px 30px 0 30px;
  }
 
 
@@ -228,6 +229,11 @@
 /* .main__contenedor{
     margin: 50px 30px 0 30px;
 } */
+
+.main__contenedor{
+    margin-top: 50px;
+}
+
 
 .main__servicios{
 
@@ -670,7 +676,8 @@ background-color: rgb(250, 250, 250);
 
 .numeros__imagen:hover{
     scale: 1.1;
-    border: #03045E 2.5px solid;
+    /* border: #03045E 2.5px solid; */
+    box-shadow: 7px 5px 6px -1px rgb(3 4 94 / 59%);
 }
 
 
@@ -719,7 +726,7 @@ border-style: solid;*/
 text-align: center;
 margin: 30px 20px 30px 20px;
 transition: all 0.3s;
-box-shadow: 7px 5px 6px -1px rgb(0 0 0 / 59%);
+
 
 }
 
@@ -898,14 +905,14 @@ font-style: normal;
 }
 
 .seccion__infoContactos{
-    background-color:rgb(240, 240, 240);
+    background-color:rgb(250, 250, 250);
     padding-top: 50px;
     padding-bottom: 40px;
     
 }
 .contenedor-informacion{
     padding: 30px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(250, 250, 250);
     margin: auto;
     
 }
@@ -919,7 +926,7 @@ font-style: normal;
 
 .contenedor__infoContacto{
     
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(250, 250, 250);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -955,8 +962,7 @@ font-style: normal;
 
 .formularioContacto{
     margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
+
 }
 
 .contenedor__formulario{
@@ -1007,6 +1013,7 @@ font-style: normal;
 
 .contenedor__destacados{
     justify-content: center;
+    
 }
 
 .contenedor__destacadosItem{
@@ -1016,6 +1023,7 @@ font-style: normal;
     border-radius: 20PX;
     width: 300px;
     margin: 30px 20px 30px 20px;
+    box-shadow: 7px 5px 6px -1px rgb(0 0 0 / 59%);
 }
 
 .primer-h2{
@@ -1031,6 +1039,8 @@ font-style: normal;
 .destacados__imagen{
     position: relative;
     min-height: 250px;
+
+    
 }
 
 .destacados__imagen img{
@@ -1039,7 +1049,7 @@ font-style: normal;
     top: 30px;
     left: 50px;
     width: 200px;
-    
+    filter: none;    
 }
 
 .nombre__destacado{
