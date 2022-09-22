@@ -163,6 +163,14 @@
 }
 /* <<<<<<<----- FIN DEL NAVBAR ------>>>>>>>>*/
 
+/* MODAL CSS */
+
+.modal-body p{
+    text-align: justify;
+}
+
+
+
 .section__videoHome{
     position: relative;
     width: 100%;
@@ -537,14 +545,29 @@ margin: 0px 5px 5px 5px;
 }
 
 .footer__copyrigth{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
     border-top: 1px;
     border-color: white;
     border-style: solid;
     margin-top: 5px;
-    padding-top: 10px;
+    padding: 15px 20px 0 20px;
     text-align: center;
     color: #ffffff;
     font-size: small;
+    
+}
+
+.footer-priv{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.footer-priv:hover{
+    cursor: pointer;
 }
 
 
@@ -557,6 +580,14 @@ margin: 0px 5px 5px 5px;
 
     .footer__listado{
         padding: 0;
+    }
+
+    .footer__copyrigth{
+        justify-content: center;
+    }
+
+    .footer-priv{
+        padding: 20px;
     }
 }
 
