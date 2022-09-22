@@ -79,7 +79,7 @@
       color: white;
       font-size: small;
       font-weight: 900;
-      text-shadow: #000 0.1em 0.1em 0.1em;
+      /* text-shadow: #000 0.1em 0.1em 0.1em; */
       
   }
   
@@ -156,7 +156,11 @@
     width: 100%;
     z-index: -99999;
   }
-
+  
+  .header:hover
+{
+    background-color: #212529;
+}
 /* <<<<<<<----- FIN DEL NAVBAR ------>>>>>>>>*/
 
 .section__videoHome{
@@ -220,83 +224,10 @@
 }
 
  /* ------ CSS HOME/SERVICIOS  -------*/
-/*
- .main__contenedor{
+
+/* .main__contenedor{
     margin: 50px 30px 0 30px;
-    
-
- }
-
- .main__servicios{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: 100%;
-    justify-content: space-evenly;
-    
-    margin-top: 30px;
-    margin-bottom: 50px;  
- }
-
- .contenedor-servicio{
-
-    width: 20%;
-    height: auto;
-    margin: 20px;
-    text-align: center;
-    min-width: 300px;
-    padding-top: 20px;
-    padding-bottom: 20px;
- }
-
- .contenedorServicioImg{
-    position: relative;
-    height: 200px;
-    width: 200px;
-    background-color: #03045E;
-    border-radius: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    
- }
-
- .servicio__image{
-    
-    background-color: #03045E;
-    margin:auto;
-    position: absolute;
-    left: 50px;
-    top: 25%;
-
-    
-}
-
- .servicio__titulo{
-    color: black;
-    font-size: xx-large;
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
- }
-
-.servicio__descripcion{
-    margin-top: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: large;
-    margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
-}*/
-
-
-
-
-
-
-
-
-.main__contenedor{
-    margin: 50px 30px 0 30px;
-}
+} */
 
 .main__servicios{
 
@@ -307,6 +238,17 @@
     justify-items: center;
     align-items: center;
     margin-top: 30px;
+}
+
+.main__contactos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+
 }
 
 .contenedor-servicio{
@@ -329,11 +271,13 @@
     border-radius: 100px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 0.5s;
     
  }
 
  .contenedorServicioImg:hover{
     background-color:#023E8A;
+    transform: scale(0.95);
  }
 
  .servicio__image{
@@ -610,6 +554,11 @@ margin: 0px 5px 5px 5px;
     }
 }
 
+
+.svg--footer{
+    background-color: rgb(250, 250, 250);
+}
+
 /* -----  INICIO DE CSS PAGINA DE NOSOTROS  ------*/
 
 /* CSS MAIN NOSOTROS*/
@@ -645,6 +594,7 @@ text-align: center;
 
 .juntos    {
 margin-bottom: 25px;
+font-family: 'Poppins', sans-serif;
 }
 
 .main__nosotros--texto h2{
@@ -661,7 +611,7 @@ margin-bottom: 25px;
 /*CSS NUMEROS INFORED*/
 .seccion_numeros{
 padding: 50px 30px 30px 20px;
-background-color: rgb(240, 240, 240);
+background-color: rgb(250, 250, 250);
 }
 
 
@@ -672,6 +622,10 @@ background-color: rgb(240, 240, 240);
     font-weight: 500 ;
     color: #023E8A;
 
+}
+
+.font-subtitulo{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contenedor__numeros{
@@ -703,6 +657,7 @@ background-color: rgb(240, 240, 240);
     background-color: white;
     margin-bottom: 20px;
     margin-left: 10px;
+    transition: all 0.3s;
     
 }
 
@@ -712,6 +667,12 @@ background-color: rgb(240, 240, 240);
     top: 25%;
     left: 50px;
 }
+
+.numeros__imagen:hover{
+    scale: 1.1;
+    border: #03045E 2.5px solid;
+}
+
 
 .numeros__numero p{
     text-align: center;
@@ -732,7 +693,7 @@ background-color: rgb(240, 240, 240);
 /*CSS staff INFORED*/
 
 .seccion__staff{
-    margin-top: 50px;
+    
     margin-bottom: 40px;
     padding-left: 50px;
     padding-right: 50px;
@@ -757,14 +718,27 @@ background-color: rgb(240, 240, 240);
 border-style: solid;*/
 text-align: center;
 margin: 30px 20px 30px 20px;
+transition: all 0.3s;
+box-shadow: 7px 5px 6px -1px rgb(0 0 0 / 59%);
 
+}
+
+.contendor-item-staff:hover{
+    scale: 1.02;
 }
 
 .staff__imagen img{
     height: 200px;
     width: auto;
     margin-bottom: 15px;
+    filter: grayscale(0.9);
+    transition: all 0.3s;
   
+}
+
+.staff__imagen img:hover{
+    filter: grayscale(0);
+    scale: 1.05;
 }
 
 .staff__nombre p{
@@ -773,6 +747,7 @@ margin: 30px 20px 30px 20px;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif
 }
 
 .staff__cargo p{
@@ -781,12 +756,13 @@ padding-left: 20px;
 padding-right: 20px;
 font-size: smaller;
 font-weight: 500;
+font-family: 'Montserrat', sans-serif;;
 }
 
 .seccion__partners{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(250, 250, 250);
     padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     margin-top: 0px;
     margin-bottom: 0px;
 
@@ -804,8 +780,7 @@ font-weight: 500;
 .tituloServicios{
     background-color: #0077B6 ;
     padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 20px;
+    margin: 0;
     color: white;
 }
 
@@ -827,7 +802,7 @@ padding-right: 15px;
 }
 
 .seccion__servicios2, .seccion__servicios4{
-background-color: rgb(250, 250, 250);
+background-color: rgb(250 250 250);
 }
 
 .seccion__servicios{
@@ -841,7 +816,7 @@ margin: 0px;
     color: white;
     margin-top: 30px;
     padding: 5px 50px;
-  
+    transition: all 0.3s;
     font-size: large;
     font-style: italic;
 
@@ -852,8 +827,7 @@ margin: 0px;
 }
 
 .seccion__linkProductos{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -881,6 +855,8 @@ font-style: normal;
 
 .bt__servicios:hover{
     cursor: pointer;
+    background-color: #03045E;
+    transform: scale(1.1);
 }
 
 .linkProductos__btton{
@@ -891,13 +867,23 @@ font-style: normal;
 
 /* CONTACTOS */
 
+/* .main__contactos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+} */
+
 .contacto__titulo{
 
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 15px;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 .tituloContacto{
@@ -908,6 +894,7 @@ font-style: normal;
     color: #023E8A;
     margin-bottom: 5px;
     font-weight:600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .seccion__infoContactos{
@@ -954,6 +941,7 @@ font-style: normal;
     padding-left: 20px;
     font-size: larger;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     }
     
 
@@ -1023,7 +1011,7 @@ font-style: normal;
 
 .contenedor__destacadosItem{
     border: 2px;
-    border-color: #023E8A;
+    border-color: #212529;
     border-style: solid;
     border-radius: 20PX;
     width: 300px;
@@ -1068,11 +1056,14 @@ font-style: normal;
 .nombre__destacado .tituloProducto{
     font-weight: bolder;
     font-size: larger;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nombre__destacado .descripcionProducto{
     font-weight: 0;
     font-size: smaller; 
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .card-producto-bottom{
@@ -1098,6 +1089,8 @@ font-style: normal;
 
 .bt__productos:hover{
     cursor: pointer;
+    background-color: #03045E;
+
 }
 
 .seccion__productosDestacados{
@@ -1106,7 +1099,7 @@ font-style: normal;
 
 .catergoriaProduto{
     margin-top: 50px;
-    
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: larger;
         
