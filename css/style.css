@@ -269,11 +269,11 @@
 
     width: 20%;
     height: auto;
-    margin: 20px;
+    margin-top: 20px;
     text-align: center;
     min-width: 300px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    
 
  }
 
@@ -317,7 +317,6 @@
     padding-left: 10%;
     padding-right: 10%;
     font-size: large;
-    margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
