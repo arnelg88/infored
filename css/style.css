@@ -473,12 +473,12 @@ margin: 0px 5px 5px 5px;
 
 @media (max-width: 480px){
 
-    .seccion__testiminios{
+    #testimoniosHome{
         display: none;
     }
 
     .seccion__testimonio--mobile{
-        display: inline-block;
+        display: block;
         padding: 0;
         padding-top: 30px;
     }
