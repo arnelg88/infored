@@ -357,6 +357,8 @@
 
  /* ------ CSS HOME/TESTIMONIOS  -------*/
 
+
+
  .seccion__testiminios{
     padding: 50px 30px 30px 20px;
     background-color: rgb(240, 240, 240);
@@ -463,6 +465,57 @@ margin: 0px 5px 5px 5px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
+
+
+.seccion__testimonio--mobile{
+    display: none;
+}
+
+@media (max-width: 480px){
+
+    .seccion__testiminios{
+        display: none;
+    }
+
+    .seccion__testimonio--mobile{
+        display: inline-block;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .contenedor-card-testimonio:hover{
+        transform: none
+    }
+
+    .contenedor-card-testimonio{
+        border-radius: 20px;
+        width: auto;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        min-width: 260px;
+        max-width: 260px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        box-shadow: 7px 0px 6px -5px rgba(0,0,0,0.59);
+        transition: none;
+       
+    }
+
+    #indicador-carousel{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+    .titulo__testimonios--mobile{
+        margin-bottom: 30px;
+    }
+}
+
+
+
  /* ------FIN CSS HOME/TESTIMONIOS  -------*/
 
 

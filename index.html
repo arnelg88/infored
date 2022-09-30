@@ -19,7 +19,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&family=Poppins:wght@700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&family=Poppins:wght@700&family=Raleway:wght@700&family=Righteous&display=swap" rel="stylesheet">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
@@ -55,7 +55,7 @@
 
     <header class="header navbar-dark navbar-index" id="menu">
         <div class="header__logo">
-            <a href="./index.html"><img class="logo" src="./images/logoTestInfo.svg" alt="Infored Argentina">
+            <a href="./index.html"><img class="logo" src="./images/INFORED.png" alt="Infored Argentina">
             </a>
         </div>
 
@@ -156,6 +156,7 @@
 <!-- INICIO_ SECCION TESTIMONIOS -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="rgb(240 240 240)" fill-opacity="1" d="M0,128L80,112C160,96,320,64,480,64C640,64,800,96,960,96C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
 
+<!-- TESTIMONIOS EN DESKTOP -->
     <section class="seccion__testiminios" id="testimoniosHome">
         
             <h2 class="tituloSecciones">TESTIMONIO DE CLIENTES</h2>
@@ -211,6 +212,99 @@
             </div>
 
         </div>
+    </section>
+
+<!-- TESTIMONIOS MOBILE -->
+    <section class="seccion__testiminios seccion__testimonio--mobile" id="testimoniosHome-mobile">
+        
+        <h2 class="tituloSecciones titulo__testimonios--mobile">TESTIMONIO DE CLIENTES</h2>
+
+
+
+ <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+    
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <div class="contenedor-card-testimonio">
+            <div class="card-top">
+                <div class="contenedor__imagenTestimonio">
+                    <img class="imagenTestimonio" src="./images/profile1.png" alt="Foto Cliente 1">
+                </div>
+                <div class="userTestimonio">
+                    <p class="userNombre">Anastasia del Bustamante</p>
+                    <p class="userCargo">Coordinador IT</p>
+                    <p class="userEmpresa">Wenance</p>
+                </div>
+            </div>
+            <div class="card-description">
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio non iusto quibusdam ex necessitatibus architecto libero dolore culpa fugiat neque eaque iure, sint nostrum hic asperiores impedit similique facilis ipsa."</p>
+            </div>
+        </div>
+
+      </div>
+      
+      <div class="carousel-item">
+        
+        <div class="contenedor-card-testimonio">
+            <div class="card-top">
+                <div class="contenedor__imagenTestimonio">
+                    <img class="imagenTestimonio" src="./images/profile3.png" alt="Foto Cliente 2">
+                </div>
+                <div class="userTestimonio">
+                    <p class="userNombre">Fernando Zamorano Farré</p>
+                    <p class="userCargo">CFO</p>
+                    <p class="userEmpresa">Accenture</p>
+                </div>
+            </div>
+            <div class="card-description">
+                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio non iusto quibusdam ex necessitatibus architecto libero dolore culpa fugiat neque eaque iure, sint nostrum hic asperiores impedit similique facilis ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit."</p>
+            </div>
+        </div>
+
+      </div>
+      
+      <div class="carousel-item">
+        
+        <div class="contenedor-card-testimonio">
+            <div class="card-top">
+                <div class="contenedor__imagenTestimonio">
+                    <img class="imagenTestimonio" src="./images/profile2.png" alt="Foto Cliente 3">
+                </div>
+                <div class="userTestimonio">
+                    <p class="userNombre">Isidora de Jover</p>
+                    <p class="userCargo">Timbó</p>
+                    <p class="userEmpresa">Anlalista de sistemas</p>
+                </div>
+            </div>
+            <div class="card-description">
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio non iusto quibusdam ex necessitatibus architecto libero dolore culpa fugiat neque eaque iure, sint nostrum hic asperiores impedit similique facilis ipsa."</p>
+            </div>
+        </div>
+        
+      </div>
+    
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+    <div class="carousel-indicators indicador-carousel" id="indicador-carousel">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+</div>
+
     </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140"><path fill="rgb(240 240 240)" fill-opacity="1" d="M0,128L80,112C160,96,320,64,480,64C640,64,800,96,960,96C1120,96,1280,64,1360,48L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
