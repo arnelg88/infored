@@ -219,7 +219,8 @@
  .tituloSecciones {
     text-align: center;
     font-size: xxx-large;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
     font-weight: 900;
     margin: 0px 30px 0 30px;
  }
@@ -706,6 +707,11 @@ font-family: 'Poppins', sans-serif;
 
 
 /*CSS NUMEROS INFORED*/
+
+#numerosNosotros-mobile{
+display: none;
+}
+
 .seccion_numeros{
 padding: 50px 30px 30px 20px;
 background-color: #e4e4e4;
@@ -788,6 +794,44 @@ background-color: #e4e4e4;
 }
 
 
+@media(max-width: 480px){
+    .numeros__imagen{
+        margin: auto;
+    }
+
+    .contenedor-item-numero{
+        margin: auto;
+        width: fit-content;
+        padding-top: 20px;
+    }
+
+    #numerosNosotros{
+        display: none;
+    }
+
+    #numerosNosotros-mobile{
+        display: block;
+        padding-top: 40px;
+
+    }
+
+    #carousel__numeros--mobile{
+        position: relative;
+    }
+
+    .numeros__imagen{
+        box-shadow: 7px 5px 6px -1px rgb(3 4 94 / 59%);
+    }
+
+    .numeros__imagen:hover{
+        scale: unset;
+        transform: none;
+        box-shadow: none;
+    }
+    
+}
+
+
 /*CSS staff INFORED*/
 
 .seccion__staff{
@@ -863,6 +907,21 @@ font-family: 'Montserrat', sans-serif;;
     /* padding-bottom: 50px; */
     margin-top: 0px;
     margin-bottom: 0px;
+
+}
+
+@media (max-width: 480px){
+    .numeros__subtitulo{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .staff__subtitulo{
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    
 
 }
 
