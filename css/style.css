@@ -39,6 +39,11 @@
       padding-left: 20px;
       transition: all 0.3s;
   }
+
+  .logo{
+    width: 171px;
+    height: auto;
+  }
   
   
   .header__logo:hover{
@@ -558,6 +563,12 @@ margin: 0px 5px 5px 5px;
 /* ------FIN CSS HOME/CLIENTES  -------*/
 
 /* ------INICIO CSS FOOTER  -------*/
+
+.logoFooter{
+    width: 210px;
+    height: auto;
+}
+
 .background-footer{
     background-color: #03045E;
     padding: 20px;
@@ -650,7 +661,7 @@ margin: 0px 5px 5px 5px;
 
 
 .svg--footer{
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(240, 240, 240);
 }
 
 .svg--footer--nosotros{
@@ -713,7 +724,7 @@ display: none;
 }
 
 .seccion_numeros{
-padding: 50px 30px 30px 20px;
+padding: 50px 0px 0px 20px;
 background-color: #e4e4e4;
 }
 
@@ -817,6 +828,7 @@ background-color: #e4e4e4;
 
     #carousel__numeros--mobile{
         position: relative;
+        margin-bottom: 0px;
     }
 
     .numeros__imagen{
@@ -926,7 +938,7 @@ font-family: 'Montserrat', sans-serif;;
 }
 
 .seccion__partners{
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(240, 240, 240);
     padding-top: 50px;
     /* padding-bottom: 50px; */
     margin-top: 0px;
@@ -1048,6 +1060,11 @@ font-style: normal;
 
 /* CONTACTOS */
 
+#mainContacto-mobile{
+    display: none;
+}
+
+
 /* .main__contactos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1079,14 +1096,14 @@ font-style: normal;
 }
 
 .seccion__infoContactos{
-    background-color:rgb(250, 250, 250);
+    background-color:rgb(240, 240, 240);
     padding-top: 50px;
     padding-bottom: 40px;
     
 }
 .contenedor-informacion{
     padding: 30px;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(240, 240, 240);
     margin: auto;
     
 }
@@ -1100,7 +1117,7 @@ font-style: normal;
 
 .contenedor__infoContacto{
     
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(240, 240, 240);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1182,8 +1199,33 @@ font-style: normal;
     margin: 15px 100px;
 }
 
+@media (max-width:480px) {
+
+    #mainContacto{
+        display: none;
+    }
+
+    #mainContacto-mobile{
+        display: block;
+    }
+
+    .contenedor-servicio{
+        margin: auto;
+    }
+    
+}
+
+
 
 /* ----- PRODUCTOS ---------*/
+
+
+#destacadosProductos--mobile
+{display: none;}
+
+#promocionesProductos--mobile{
+    display: none;
+}
 
 .contenedor__destacados{
     justify-content: center;
@@ -1212,7 +1254,9 @@ font-style: normal;
 
 .destacados__imagen{
     position: relative;
-    min-height: 250px;
+    /* min-height: 250px; */
+    padding: 15px;
+    max-height: 210px;
 
     
 }
@@ -1227,7 +1271,7 @@ font-style: normal;
 }
 
 .nombre__destacado{
-   background-color: #0077B6;
+   background-color: #03045E;
    padding-top: 10px;  
    padding-bottom: 10px;  
 }
@@ -1241,12 +1285,15 @@ font-style: normal;
     font-weight: bolder;
     font-size: larger;
     font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    padding: 0 20px;
 }
 
 .nombre__destacado .descripcionProducto{
     font-weight: 0;
     font-size: smaller; 
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
 
 }
 
@@ -1291,4 +1338,37 @@ font-style: normal;
 
 .seccion__productosPromociones{
 margin-bottom: 50px;
+}
+
+@media(max-width:480px){
+
+    #destacadosProductos{
+        display: none;
+    }
+
+    #promocionesProductos{
+        display: none;
+    }
+
+    #promocionesProductos--mobile{
+        display: block;
+    }
+
+    #destacadosProductos--mobile{
+        display: block;
+    }
+
+    .contenedor__destacadosItem{
+        margin: auto;
+        box-shadow: 7px 0px 6px -5px rgb(0 0 0 / 59%);
+    }
+
+    #carousel__productos--mobile{
+        position: relative;
+    }
+
+    .contenedor__destacadosItem{
+        margin-bottom: 20px;
+    }
+
 }
