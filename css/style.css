@@ -62,7 +62,7 @@
   
   .menu__ul .menu__titulo{
       transition: all 0.5s;
-      height: 70px;
+      height: auto;
   
   }
   
@@ -928,8 +928,8 @@ background-color: #e4e4e4;
 }
 
 .staff__subtitulo{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-bottom: 20px;
 }
 
