@@ -56,8 +56,7 @@
       padding-right: 20px;
       padding-left: 20px;
       margin-bottom: 0;
-      margin-top: 0;
-      
+      margin-top: 0;    
   }
   
   .menu__ul .menu__titulo{
@@ -168,6 +167,7 @@
 }
 /* <<<<<<<----- FIN DEL NAVBAR ------>>>>>>>>*/
 
+
 /* MODAL CSS */
 
 .modal-body p{
@@ -175,6 +175,8 @@
 }
 
 
+
+/* SECCION VIDEO  */
 
 .section__videoHome{
     position: relative;
@@ -220,7 +222,10 @@
 
  /*FIN CSS HASTA VIDEOS*/
 
-/*CCS PARA LOS TITULOS DE LAS SECCIONES*/
+
+
+
+ /*CCS PARA LOS TITULOS DE LAS SECCIONES*/
  .tituloSecciones {
     text-align: center;
     font-size: xxx-large;
@@ -238,11 +243,11 @@
 }
 }
 
- /* ------ CSS HOME/SERVICIOS  -------*/
 
-/* .main__contenedor{
-    margin: 50px 30px 0 30px;
-} */
+
+
+
+/* ------ CSS HOME/SERVICIOS  -------*/
 
 .main__contenedor{
     margin-top: 50px;
@@ -260,16 +265,7 @@
     margin-top: 30px;
 }
 
-.main__contactos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    margin-top: 30px;
 
-}
 
 .contenedor-servicio{
 
@@ -291,8 +287,7 @@
     border-radius: 100px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 0.5s;
-    
+    transition: all 0.5s;  
  }
 
  .contenedorServicioImg:hover{
@@ -348,23 +343,13 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
  /* ------ FIN CSS HOME/SERVICIOS  -------*/
 
 
 
+
+
  /* ------ CSS HOME/TESTIMONIOS  -------*/
-
-
-
  .seccion__testiminios{
     padding: 50px 30px 0px 30px;
     background-color: rgb(240, 240, 240);
@@ -384,8 +369,7 @@
  }
 
 .contenedor-card-testimonio{
-    /*border: 1px;
-    border-style: solid;*/
+
     border-radius: 20px;
     width: 30%;
     height: auto;
@@ -428,9 +412,7 @@
     height: auto;
     position: relative;
     margin: auto;
-    top: 5%;
-   
-   
+    top: 5%; 
  }
  
  .userTestimonio{
@@ -490,7 +472,7 @@ margin: 0px 5px 5px 5px;
     }
 
     .contenedor-card-testimonio:hover{
-        transform: none
+        transform: none;
     }
 
     .contenedor-card-testimonio{
@@ -519,57 +501,14 @@ margin: 0px 5px 5px 5px;
         margin-bottom: 30px;
     }
 }
-
-
-
  /* ------FIN CSS HOME/TESTIMONIOS  -------*/
+
+
+
 
 
 /* ------CSS HOME/CLIENTES  -------*/
  
-/* comentado
-
-.seccion__clientes{
-    margin-top: 50px; linea comentada
-    margin-bottom: 50px; linea comentada
-    padding: 50px 30px 0px 20px;
- }
-
- .clientes__slider{
-    width: 100%;    
- }
-
-
- .slider__ul{
-    
-    display: flex; linea comentada
-    flex-wrap: wrap; linea comentada
-    justify-content: center; linea comentada
-
-    margin: 0;
-    margin-top: 50px;
-    padding: 15px 50px 0px 50px;
-    text-align: center;
-}
-
- .slider__ul li{
-    display: inline;
-    list-style: none;
-    margin: 0 30px;
-}
-
-.slider-li img{
-    width: 120px;
-    height: 60px;
-    filter: grayscale(1);
-}
-
-comentado */
-
-/* ------FIN CSS HOME/CLIENTES  -------*/
-
-
-
 /* INICIO SLIDER ANIMADO */
 
 
@@ -606,6 +545,7 @@ comentado */
 
 .clientes__slider .slider-li img{
     width: 100%;
+    filter: grayscale(1);
     
     
 }
@@ -623,14 +563,9 @@ comentado */
 }
 
 /* FIN SLIDER ANIMADO */
+/* ------FIN CSS HOME/CLIENTES  -------*/
 
 
-
-
-
-
-
-/* FIN SLIDER ANIMADO */
 
 
 /* ------INICIO CSS FOOTER  -------*/
@@ -1136,8 +1071,7 @@ font-style: normal;
     display: none;
 }
 
-
-/* .main__contactos {
+.main__contactos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -1145,7 +1079,8 @@ font-style: normal;
     justify-items: center;
     align-items: center;
     margin-top: 30px;
-} */
+
+}
 
 .contacto__titulo{
 
@@ -1285,6 +1220,20 @@ font-style: normal;
         margin: auto;
     }
     
+}
+
+@media (max-width: 940px){
+    .main__contactos{
+            display: grid;
+             grid-template-columns: repeat(2, 1fr);
+        }
+}
+
+@media (max-width: 760px){
+    .main__contactos{
+            display: grid;
+             grid-template-columns: 1fr;
+        }
 }
 
 

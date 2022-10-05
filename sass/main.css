@@ -1,0 +1,441 @@
+/* INICIO RESET CSS */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* VARIABLES */
+/* MIXIN */
+/* INICIO DE NAVBAR */
+.header {
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+.header #check {
+  display: none;
+}
+.header .checkbtn {
+  display: none;
+}
+.header .checkbtn .menu_hambur {
+  height: 40px;
+}
+.header__logo {
+  padding-left: 20px;
+  transition: all 0.3s;
+}
+.header__logo .logo {
+  width: 171px;
+  height: auto;
+}
+.header__logo:hover {
+  transform: scale(0.95);
+}
+.header__menu .menu__ul {
+  list-style: none;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.header__menu .menu__ul .menu__titulo {
+  transition: all 0.5s;
+  height: auto;
+}
+.header__menu .menu__ul .menu__titulo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header__menu .menu__ul .menu__titulo .menu_color {
+  display: block;
+  padding: 27px 10px 23px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  font-weight: 900;
+}
+.header__menu .menu__ul .menu__titulo .menu_color:hover {
+  font-weight: 700;
+}
+.header:hover {
+  background-color: #212529;
+}
+
+.navbar-pages {
+  position: fixed;
+  background-color: #000;
+  top: 0;
+}
+
+.nav-bg {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  z-index: -99999;
+}
+
+/* FIN DEL NAVBAR */
+/* MODAL CSS */
+.modal-body p {
+  text-align: justify;
+}
+
+/* FIN MODAL CSS */
+/* SECCION VIDEO HOME */
+.section__videoHome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+.section__videoHome .videoHome {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: FILL;
+     object-fit: FILL;
+}
+
+/*CCS PARA LOS TITULOS DE LAS SECCIONES*/
+.tituloSecciones {
+  text-align: center;
+  font-size: xxx-large;
+  font-family: "Righteous", cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0px 30px 0 30px;
+}
+
+/* FIN CCS PARA LOS TITULOS DE LAS SECCIONES*/
+/* -----CSS HOME/SERVICIOS-----*/
+.main__contenedor {
+  margin-top: 50px;
+}
+.main__contenedor .main__servicios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.main__contenedor .main__servicios .contenedor-servicio {
+  width: 20%;
+  height: auto;
+  margin-top: 20px;
+  text-align: center;
+  min-width: 300px;
+  padding-top: 20px;
+}
+.main__contenedor .main__servicios .contenedor-servicio .contenedorServicioImg {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: #03045E;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+}
+.main__contenedor .main__servicios .contenedor-servicio .contenedorServicioImg:hover {
+  background-color: #023E8A;
+  transform: scale(0.95);
+}
+.main__contenedor .main__servicios .contenedor-servicio .contenedorServicioImg .servicio__image {
+  margin: auto;
+  position: absolute;
+  left: 50px;
+  top: 25%;
+}
+.main__contenedor .main__servicios .contenedor-servicio .servicio__titulo {
+  color: black;
+  font-size: xx-large;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.main__contenedor .main__servicios .contenedor-servicio .servicio__descripcion {
+  margin-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -----FIN CSS HOME/SERVICIOS-----*/
+/* ----CSS HOME/TESTIMONIOS----*/
+.seccion__testiminios {
+  padding: 50px 30px 0px 30px;
+  background-color: rgb(240, 240, 240);
+}
+.seccion__testiminios .carouserTestimonios {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-left: 20x;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio {
+  border-radius: 20px;
+  width: 30%;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  min-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 7px 5px 6px -1px rgba(0, 0, 0, 0.59);
+  transition: all 0.3s;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio:hover {
+  transform: scale(1.06);
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top .contenedor__imagenTestimonio {
+  position: relative;
+  width: 30%;
+  height: 100px;
+  min-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top .contenedor__imagenTestimonio .imagenTestimonio {
+  width: 90px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  top: 5%;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top .userTestimonio {
+  width: 70%;
+  padding-top: 10px;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top .userTestimonio p {
+  text-align: left;
+  margin: 0px 5px 5px 5px;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top .userTestimonio .userNombre {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top .userTestimonio .userCargo {
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-top .userTestimonio .userEmpresa {
+  font-size: small;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-description {
+  padding-left: 10%;
+  padding-right: 40px;
+}
+.seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-description p {
+  text-align: justify;
+  line-height: 2em;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+}
+
+.seccion__testimonio--mobile {
+  display: none;
+}
+
+/* ----FIN CSS HOME/TESTIMONIOS----*/
+/* MEDIA QUERYS DEL NAV */
+@media (max-width: 858px) {
+  .header .checkbtn {
+    display: block;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+  .header__menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    top: 70px;
+    right: -100%;
+    transition: all 0.4s;
+  }
+  .header__menu .menu__ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header__menu .menu__ul .menu__titulo:hover {
+    cursor: pointer;
+  }
+  .header__menu .menu__ul .menu__titulo .menu_color {
+    padding-top: 30px;
+    font-size: larger;
+  }
+  #check:checked ~ .header__menu {
+    right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .header__logo .logo {
+    width: 150px;
+  }
+  .header .checkbtn .menu_hambur {
+    height: 35px;
+  }
+  .navbar-index {
+    position: fixed;
+    background-color: #212529;
+    top: 0;
+  }
+}
+/* FIN MEDIA QUERYS DEL NAVBAR */
+/* MEDIA QUERYS DEL VIDEO HOME */
+@media (max-width: 480px) {
+  .section__videoHome {
+    position: relative;
+    width: 100%;
+    top: 70px;
+    height: calc(50vh + 70px);
+  }
+  .section__videoHome .videoHome {
+    position: relative;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    top: 0px;
+    height: 50vh;
+  }
+}
+/* FIN MEDIA QUERYS DEL VIDEO HOME */
+/* MEDIA QUERYS TITULOS MOBILE */
+@media (max-width: 480px) {
+  .tituloSecciones {
+    font-size: xx-large;
+  }
+}
+/* FIN MEDIA QUERYS TITULOS MOBILE */
+/* MEDIA QUERYS SERVICIOS HOME*/
+@media (max-width: 1420px) {
+  .main__contenedor .main__servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .main__contenedor .main__servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* FIN MEDIA QUERYS SERVICIOS HOME*/
+/* MEDIA QUERYS TESTIMONIOS HOME*/
+@media (max-width: 480px) {
+  #testimoniosHome {
+    display: none;
+  }
+  .seccion__testimonio--mobile {
+    display: block;
+    padding: 0;
+    padding-top: 30px;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio {
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    min-width: 260px;
+    max-width: 260px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 7px 0px 6px -5px rgba(0, 0, 0, 0.59);
+    transition: none;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio:hover {
+    transform: none;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top .contenedor__imagenTestimonio {
+    position: relative;
+    width: 30%;
+    height: 100px;
+    min-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top .contenedor__imagenTestimonio .imagenTestimonio {
+    width: 90px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: 5%;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top .userTestimonio {
+    width: 70%;
+    padding-top: 10px;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top .userTestimonio p {
+    text-align: left;
+    margin: 0px 5px 5px 5px;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top .userTestimonio .userNombre {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top .userTestimonio .userCargo {
+    font-size: small;
+    font-family: "Montserrat", sans-serif;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-top .userTestimonio .userEmpresa {
+    font-size: small;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-description {
+    padding-left: 10%;
+    padding-right: 40px;
+  }
+  .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-description p {
+    text-align: justify;
+    line-height: 2em;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+  }
+  #indicador-carousel {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .titulo__testimonios--mobile {
+    margin-bottom: 30px;
+  }
+}
+/* FIN MEDIA QUERYS TESTIMONIOS HOME*//*# sourceMappingURL=main.css.map */
