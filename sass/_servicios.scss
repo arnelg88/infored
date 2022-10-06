@@ -1,0 +1,102 @@
+/* INICIO  PAGINA DE SERVICIOS */
+
+.tituloServicios{
+    background-color: #0077B6 ;
+    padding-top: 25px;
+    margin: 0;
+    color: white;
+}
+
+/* NUESTROS INFORED */
+
+.seccion__servicios{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+#servicios1 , #servicios2, #servicios3, #servicios4{
+    .contenedor__servicio{
+        justify-content: space-evenly;
+        .main__servicios--texto{
+            text-align: center;
+            padding-bottom: 5px;
+            p{
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+        .main__images{
+            .img-consultoria{
+                max-height: 210px;
+                margin-bottom: 20px;
+            }
+        }
+        .main__servicios--texto{
+            .bt__servicios{
+                background-color: #023E8A;
+                color: white;
+                margin-top: 30px;
+                padding: 5px 50px;
+                transition: all 0.3s;
+                font-size: large;
+                font-style: italic;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #03045E;
+                    transform: scale(1.1);
+                }
+            
+            }
+        }
+    }
+}
+
+.seccion__servicios2, .seccion__servicios4{
+    background-color: rgb(250 250 250);
+}
+
+/* SERVICIOS INFORED */
+
+/* BOTON DE PRODUCTOS SERVICIOS */
+.seccion__linkProductos{
+    margin-top: 30px;
+    text-align: center;
+    .linkProductos__texto{
+        width: 50%;
+        margin: auto;
+        p{
+           @include titulo-main;
+           font-weight: bold;
+           text-align: center; 
+        }
+    }
+    .linkProductos__bt{
+        margin-top: 20PX;
+        input{
+            font-style: normal;
+        }
+        .linkProductos__btton{
+            background-color: #023E8A;
+            color: white;
+            margin-top: 30px;
+            padding: 15px 50px;
+            transition: all 0.3s;
+            font-size: large;
+            font-style: italic;
+            &:hover{
+                cursor: pointer;
+                background-color: #03045E;
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+/* Fin BOTON DE PRODUCTOS SERVICIOS */
+/* FIN  PAGINA DE SERVICIOS */

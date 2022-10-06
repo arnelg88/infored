@@ -1,0 +1,299 @@
+/* INICIO PAGINA NOSOTROS */
+/* MAIN NOSOTROS */
+.contenedor__main{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    .contenedor-der{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        .main__images{
+            text-align: center;
+            img{
+                width: 350px;
+                padding-left:30px;
+                padding-right: 30px;                
+            }
+        }
+        .main__nosotros--texto{
+            max-width: 500px;
+            padding: 0 30px 50px 30px;
+            text-align: justify;
+            .juntos{
+                margin-bottom: 25px;
+                @include titulo-main
+            }
+            .primer-h2{
+                @include titulo-main
+            }
+            p{
+                @include descripcion-main         
+            }
+        }      
+     }
+}
+/*  FIN MAIN NOSOTROS */
+
+/*CSS NUMEROS INFORED DESKTOP*/
+#numerosNosotros-mobile{
+    display: none;
+}
+
+.seccion_numeros{
+    padding: 50px 0px 20px 0px;
+    background-color: #e4e4e4;
+    .numeros__subtitulo{
+        padding-top: 15px;
+        text-align: center;
+        font-size: larger;
+        font-weight: 500 ;
+        color: #023E8A;
+        font-family: $font-descripcion;
+    }
+    .contenedor__numeros{
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        .contenedor-item-numero{
+            width: 220px;
+            text-align: center;
+            margin-bottom: 40px;
+            .numeros__imagen{
+                position: relative;
+                height: 200px;
+                width: 200px;
+                border-radius: 100px;
+                background-color: white;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                transition: all 0.3s;
+                img{
+                    position: absolute;
+                    top: 25%;
+                    left: 50px;  
+                }
+                &:hover{
+                    scale: 1.1;
+                    box-shadow: 7px 5px 6px -1px rgb(3 4 94 / 59%);
+                }
+            }
+            .numeros__numero{
+                p{
+                    font-family: $font-subtitulos;
+                    text-align: center;
+                    font-size: 50px;
+                    font-weight: bolder;
+                    margin-bottom: 5px;
+                    color: #023E8A;
+                }
+            }
+            .numeros__descripcion{ 
+                p{
+                    font-family: $font-descripcion;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }    
+        }
+
+    }
+}
+
+/* FIN CSS NUMEROS INFORED DESKTOP*/   
+
+/* NUMEROS INFORED MOBILE */
+#numerosNosotros-mobile{
+    padding: 50px 0px 20px 0px;
+    background-color: #e4e4e4;
+    .numeros__subtitulo{
+        padding-top: 15px;
+        text-align: center;
+        font-size: larger;
+        font-weight: 500 ;
+        color: #023E8A;
+        font-family: $font-descripcion;
+    }
+    #carouselExampleIndicators{
+        .carousel-inner{
+            .carousel-item{
+                .contenedor-item-numero{
+                width: 220px;
+                text-align: center;
+                margin-bottom: 40px;
+                    .numeros__imagen{
+                        position: relative;
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 100px;
+                        background-color: white;
+                        margin-bottom: 20px;
+                        margin-left: 10px;
+                        transition: all 0.3s;
+                        img{
+                            position: absolute;
+                            top: 25%;
+                            left: 50px;  
+                        }
+                        &:hover{
+                            scale: 1.1;
+                            box-shadow: 7px 5px 6px -1px rgb(3 4 94 / 59%);
+                        }
+                    }
+                    .numeros__numero{
+                        p{
+                            font-family: $font-subtitulos;
+                            text-align: center;
+                            font-size: 50px;
+                            font-weight: bolder;
+                            margin-bottom: 5px;
+                            color: #023E8A;
+                        }
+                    }
+                    .numeros__descripcion{ 
+                        p{
+                            font-family: $font-descripcion;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+/* FIN NUMEROS INFORED MOBILE */
+
+/*CSS staff INFORED DESKTOP*/
+#staffNosotros-mobile{
+    display: none;
+}
+
+.seccion__staff{
+    padding: 50px 0px 20px 0px;
+    .staff__subtitulo{
+        padding-top: 15px;
+        text-align: center;
+        font-size: larger;
+        font-weight: 500 ;
+        color: #023E8A;
+        font-family: $font-descripcion;
+        padding-left:50px;
+        padding-right:50px;
+        margin-bottom: 20px;
+    }
+    .contenedor__staff{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        .contendor-item-staff{
+            text-align: center;
+            margin: 30px 20px 30px 20px;
+            transition: all 0.3s; 
+            &:hover{
+                scale: 1.02;
+            }
+            .staff__imagen{
+                img{
+                    height: 200px;
+                    width: auto;
+                    margin-bottom: 15px;
+                    filter: grayscale(0.9);
+                    transition: all 0.3s;
+                    &:hover{
+                        filter: grayscale(0);
+                        scale: 1.05;
+                    }
+                }
+            }
+            .staff__nombre{
+                p{
+                    @include parrafo-nombre-staff
+                }
+            }
+            .staff__cargo{
+                p{
+                    @include parrafo-cargo-staff
+                }
+            }       
+        }
+    }
+}
+
+/*FIN CSS staff INFORED DESKTOP*/
+
+
+.seccion__partners{
+    background-color: rgb(240, 240, 240);
+    padding-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+
+
+/*CSS staff INFORED MOBILE*/
+#staffNosotros-mobile{
+    padding: 50px 0px 20px 0px;
+    .staff__subtitulo{
+        padding-top: 15px;
+        text-align: center;
+        font-size: larger;
+        font-weight: 500 ;
+        color: #023E8A;
+        font-family: $font-descripcion;
+        padding-left:50px;
+        padding-right:50px;
+        margin-bottom: 20px;
+    }
+    #carouselExampleDark{
+        .carousel-inner{
+            .carousel-item{
+                .contendor-item-staff{
+                    text-align: center;
+                    margin: 30px 20px 30px 20px;
+                    transition: all 0.3s; 
+                    &:hover{
+                        scale: 1.02;
+                    }
+                    .staff__imagen{
+                        img{
+                            height: 200px;
+                            width: auto;
+                            margin-bottom: 15px;
+                            filter: grayscale(0.9);
+                            transition: all 0.3s;
+                            &:hover{
+                                filter: grayscale(0);
+                                scale: 1.05;
+                            }
+                        }
+                    }
+                    .staff__nombre{
+                        p{
+                            @include parrafo-nombre-staff
+                        }
+                    }
+                    .staff__cargo{
+                        p{
+                            @include parrafo-cargo-staff
+                        }
+                    }       
+               }
+                
+            }
+        }
+    }    
+}
+/*FIN CSS staff INFORED MOBILE*/
+/* FIN PAGE NOSOTROS */

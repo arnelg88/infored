@@ -1,0 +1,142 @@
+/* INICIO PAGINA PRODUCTOS */
+#destacadosProductos--mobile{
+    display: none;
+}
+
+#promocionesProductos--mobile{
+    display: none;
+}
+
+.seccion__productosDestacados{
+    text-align: center;
+    .catergoriaProduto{
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: larger;     
+    }
+    .contenedor__destacados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .contenedor__destacadosItem{
+            border: 2px;
+            border-color: #212529;
+            border-style: solid;
+            border-radius: 20PX;
+            width: 300px;
+            margin: 30px 20px 30px 20px;
+            box-shadow: 7px 5px 6px -1px rgb(0 0 0 / 59%);
+            .destacados__imagen{
+                position: relative;
+                /* min-height: 250px; */
+                padding: 15px;
+                max-height: 210px;
+                img{
+                    position: absolute;
+                    margin: auto;
+                    top: 30px;
+                    left: 50px;
+                    width: 200px;
+                    filter: none;
+                } 
+            }
+            .nombre__destacado{
+                background-color: #03045E;
+                padding-top: 10px;  
+                padding-bottom: 10px;
+                p{
+                    padding: 5px 20%;
+                    color: #fff;
+                    font-weight: 0;
+                    font-size: smaller; 
+                    font-family: $font-descripcion;
+                    margin-bottom: 0;
+                }
+                .tituloProducto{
+                    font-weight: bolder;
+                    font-size: larger;
+                    font-family: 'Poppins', sans-serif;
+                    color: #ffffff;
+                    padding: 0 20px;
+                }  
+            }
+            .precioProducto{
+                font-size: xx-large;
+                font-weight: bolder;
+                font-family: $font-subtitulos;
+            }
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+    
+}
+
+.seccion__productosDestacados{
+    margin-bottom: 50px;
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .contenedor__destacadosItem{
+                    border: 2px;
+                    border-color: #212529;
+                    border-style: solid;
+                    border-radius: 20PX;
+                    width: 270px;
+                    height: auto;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                    box-shadow: 7px 5px 6px -1px rgb(0 0 0 / 59%);
+                    .destacados__imagen{
+                        position: relative;
+                        padding: 15px;
+                        max-height: 210px;
+                        img{
+                            position: absolute;
+                            margin: auto;
+                            top: 30px;
+                            left: 50px;
+                            width: 200px;
+                            filter: none;
+                        } 
+                    }
+                    .nombre__destacado{
+                        background-color: #03045E;
+                        padding-top: 10px;  
+                        padding-bottom: 10px;
+                        p{
+                            padding: 5px 20%;
+                            color: #fff;
+                            font-weight: 0;
+                            font-size: smaller; 
+                            font-family: $font-descripcion;
+                            margin-bottom: 0;
+                        }
+                        .tituloProducto{
+                            font-weight: bolder;
+                            font-size: larger;
+                            font-family: 'Poppins', sans-serif;
+                            color: #ffffff;
+                            padding: 0 20px;
+                        }  
+                    }
+                    .precioProducto{
+                        font-size: xx-large;
+                        font-weight: bolder;
+                        font-family: $font-subtitulos;
+                    }
+                    transition: all 0.3s;
+                    &:hover{
+                    transform: scale(1.008);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FIN PAGINA PRODUCTOS */

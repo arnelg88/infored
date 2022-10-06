@@ -1,0 +1,320 @@
+/* <-----MEDIA QUERYS-------> */
+
+/* MEDIA QUERYS DEL NAV */
+@media (max-width: 858px) {
+    .header .checkbtn{
+        display: block;
+        cursor: pointer;
+        padding-right: 20px;
+    }
+
+    .header__menu{
+        position: absolute;
+        background-color: rgba(0, 0,0, 0.8);
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        right: -100%;
+        transition: all 0.4s;
+        .menu__ul{        
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .menu__titulo{
+                &:hover{
+                    cursor: pointer;
+                }
+                .menu_color{
+                    padding-top: 30px;
+                    font-size: larger;        
+                }
+            }
+        }
+    }    
+    #check:checked ~ .header__menu{
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__logo .logo{
+        width: 150px;
+    }
+
+    .titulo__h1{
+        font-size: large;
+    }
+
+    .header .checkbtn .menu_hambur{
+        height: 35px;
+    }
+    .navbar-index{
+      position: fixed;
+      background-color: #212529;
+      top: 0;
+    }
+}
+/* FIN MEDIA QUERYS DEL NAVBAR */
+
+
+/* MEDIA QUERYS DEL VIDEO HOME */
+@media (max-width: 480px) {
+    .section__videoHome {
+        position: relative;
+        width: 100%;
+        top: 70px;
+        height: calc(50vh + 70px) ;
+        .videoHome {
+            position: relative;
+            width: 100%;
+            object-fit: fill;
+            top: 0px;
+            height: 50vh;       
+        }
+    }
+}
+/* FIN MEDIA QUERYS DEL VIDEO HOME */
+
+/* MEDIA QUERYS TITULOS MOBILE */
+@media (max-width: 480px) {
+    .tituloSecciones {
+    font-size: xx-large;
+    }
+}
+/* FIN MEDIA QUERYS TITULOS MOBILE */
+
+
+/* MEDIA QUERYS SERVICIOS HOME*/
+@media (max-width: 1420px){
+    .main__contenedor{
+        .main__servicios{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 760px){
+    .main__contenedor{
+        .main__servicios{
+            display: grid;
+             grid-template-columns: 1fr;
+        }
+    } 
+}
+/* FIN MEDIA QUERYS SERVICIOS HOME*/
+
+
+/* MEDIA QUERYS TESTIMONIOS MOBILE*/
+@media (max-width: 480px){
+
+    .seccion__testimonio--mobile{
+        display: block;
+    }
+
+    #testimoniosHome{
+        display: none;
+    }
+
+    #indicador-carousel{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+    .titulo__testimonios--mobile{
+        margin-bottom: 30px;
+    }
+}/* FIN MEDIA QUERYS TESTIMONIOS MOBILE*/
+
+/* KEYFRAME DEL SCROLL CLIENTES PARTNERS */
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100%{
+        -webkit-transform: translateX(calc(-150px * 6));
+        transform: translateX(calc(-150px * 6));
+    }
+}
+/* FIN KEYFRAME DEL SCROLL CLIENTES PARTNERS */
+
+
+/* MEDIA FOOTER MOBILE*/
+
+@media (max-width: 480px){
+    .background-footer .contenedor-footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .background-footer .contenedor-footer .footer__listado{
+        padding: 0;
+    }
+
+
+    .background-footer .contenedor-footer .footer__sociales li{
+        display: inline;
+        .spam{
+            display: none;
+        }
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+
+    .background-footer .footer__copyrigth{
+        justify-content: center;
+    }
+
+    .background-footer .footer__copyrigth .footer-priv{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width:778px){
+
+    .background-footer .contenedor-footer{
+        flex-wrap: nowrap;
+        text-align: center;
+        .logoFooter {
+            max-width: 150px;
+            height: auto;
+        }
+        .footer__logo, .accesos-footer, .footer__redes {
+            min-width: auto;
+            padding: 10px;
+        }
+    }
+}
+/* MEDIA FOOTER */
+
+/* MEDIA NUMEROS INFORED MOBILE */
+@media(max-width: 480px){
+
+    #numerosNosotros{
+        display: none;
+    }
+
+    #numerosNosotros-mobile{
+        display: block;
+        padding-top: 40px;
+        .numeros__subtitulo{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+    }
+
+    #numerosNosotros-mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-item-numero{
+        margin: auto;
+        width: fit-content;
+        padding-top: 20px;
+        .numeros__imagen{
+            margin: auto;
+            box-shadow: 7px 5px 6px -1px rgb(3 4 94 / 59%);
+            &:hover{
+                scale: unset;
+                transform: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    #carousel__numeros--mobile{
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+}
+/* FIN MEDIA NUMEROS INFORED MOBILE */
+
+
+/*CSS staff INFORED MOBILE*/
+@media (max-width: 480px) {
+    
+    #staffNosotros{
+        display: none;
+    }
+    
+    #staffNosotros-mobile{
+        display: block;
+        .staff__subtitulo{
+            padding: 0px;
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    
+    #carouser__staff--mobile{
+        position: relative;
+    }
+    
+    #staffNosotros-mobile #carouselExampleDark .carousel-inner .carousel-item .contendor-item-staff .staff__cargo p {
+        margin: auto;
+    }
+    
+}
+/*FIN CSS staff INFORED MOBILE*/
+
+
+/* MEDIA QUERYS PAGINA CONTACTOS */
+
+
+@media (max-width:480px) {
+
+    #mainContacto{
+        display: none;
+    }
+
+    #mainContacto-mobile{
+        display: block;
+    }
+    
+}
+
+@media (min-width: 760px) and (max-width: 1200px){
+    .seccion__infoContactos{
+        .contenedor__infoContacto{
+            flex-wrap: nowrap;
+            .contenedor-mapa{
+                padding: 15px;
+                .mapa{
+                    min-width: 350;
+                    
+                }
+            }
+        }
+    }       
+}
+
+
+
+/* MEDIA QUERYS DE PRODUCTOS */
+@media(max-width:679px){
+
+    #destacadosProductos{
+        display: none;
+    }
+
+    #promocionesProductos{
+        display: none;
+    }
+
+    #promocionesProductos--mobile{
+        display: block;
+    }
+
+    #destacadosProductos--mobile{
+        display: block;
+    }
+
+    #carousel__productos--mobile{
+        position: relative;
+    }
+
+}

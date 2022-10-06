@@ -1,0 +1,206 @@
+/* INICIO  PAGINA DE CONTACTOS */
+
+/* MAIN CONTACTOS DESKTOP */
+#mainContacto-mobile{
+    display: none;
+}
+
+.main__contenedor{
+    .main__contactos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        .contenedor-servicio{
+            .contacto__titulo{
+                margin-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 15px;
+                font-family: $font-subtitulos
+            }
+            p{
+                font-family: $font-descripcion;
+            }
+            .contacto__descripcion{
+                color: #023E8A;
+                margin-bottom: 5px;
+                font-weight:600;
+            }
+        }
+    }
+}
+
+
+/* MAIN MOBILE CONTACTOS */
+
+#mainContacto-mobile{
+    #carouselExampleControls{
+        .carousel-inner{
+            .carousel-item{
+                .contenedor-servicio{
+                    margin: auto;
+                    width: 20%;
+                    height: auto;
+                    margin-top: 20px;
+                    text-align: center;
+                    min-width: 300px;
+                    padding-top: 20px;
+                    .contenedorServicioImg{
+                        position: relative;
+                        height: 200px;
+                        width: 200px;
+                        background-color: #03045E;
+                        border-radius: 100px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color:#023E8A;
+                            transform: scale(0.95); 
+                        }
+                        .servicio__image{
+                            margin:auto;
+                            position: absolute;
+                            left: 50px;
+                            top: 25%; 
+                        } 
+                    }
+                    .servicio__titulo{
+                        color: black;
+                        font-size: xx-large;
+                        margin-top: 20px;
+                        font-family: $font-subtitulos;
+                    }
+                    .servicio__descripcion{
+                        margin-top: 20px;
+                        padding-left: 10%;
+                        padding-right: 10%;
+                        font-size: large;
+                        font-family: $font-descripcion
+                    }
+                    .contacto__titulo{
+                        margin-top: 20px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        margin-bottom: 15px;
+                        font-family: $font-subtitulos
+                    }
+                    p{
+                        font-family: $font-descripcion;
+                    }
+                    .contacto__descripcion{
+                        color: #023E8A;
+                        margin-bottom: 5px;
+                        font-weight:600;
+                    }
+                 }
+            }
+        }
+    }
+}
+
+
+
+/* SECCION INFO CONTACTOS */
+.tituloContacto{
+    margin-bottom: 30px;
+}
+.seccion__infoContactos{
+    background-color:rgb(240, 240, 240);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    .contenedor__infoContacto{
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .contenedor-informacion{
+            padding: 30px;
+            background-color: rgb(240, 240, 240);
+            margin: auto;
+            .contendor-infoItem{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                img{
+                    height: 40px;
+                }
+                p{
+                    padding-left: 20px;
+                    font-size: larger;
+                    font-weight: bold;
+                    font-family: $font-subtitulos
+                }
+            } 
+        }
+    }
+    .contenedor-mapa{
+        padding: 0px;
+        margin: auto;
+        .mapa{
+            min-height: 300px;
+            max-width: 650px;
+            min-width: 380px;
+            border: 1px;
+            border-style: solid;
+        }
+    }
+}
+/* FIN SECCION INFO CONTACTO */
+
+/* INICIO SEECION FORMULARIO */
+.formularioContacto{
+    margin: auto;
+    .contenedor__formulario{
+        margin-top: 50px;
+        .contenedorItems{
+            padding-left: 15%;
+            padding-right: 15%;
+            margin: auto;
+            .formItem{
+                font-size: larger;
+                border-bottom: 2px;
+                border-style: solid;
+                margin-bottom: 25px;
+                width: 100%;
+                height: 40px;    
+            }
+            .consulaItem{
+                height: auto;
+                font-size: larger;
+                border-bottom: 2px;
+                border-style: solid;
+                margin-bottom: 25px;
+                margin-top: 25px;
+                width: 100%;
+            }
+        }
+        
+    }
+    .contenedor__botonesForm{
+        text-align: center;
+        .linkProductos__btton{
+            background-color: #023E8A;
+            color: white;
+            margin-top: 30px;
+            padding: 15px 50px;
+            transition: all 0.3s;
+            font-size: large;
+            font-style: italic;
+            &:hover{
+                cursor: pointer;
+                background-color: #03045E;
+                transform: scale(1.1);
+            }
+        }
+        .btForm{
+            margin: 15px 100px;
+        }   
+    }
+}
+/* FIN SEECION FORMULARIO */
+/* FIN  PAGINA DE CONTACTOS */
