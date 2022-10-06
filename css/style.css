@@ -914,7 +914,7 @@ transition: all 0.3s;
 }
 
 .staff__cargo p{
-    max-width: 200px;
+max-width: 200px;
 padding-left: 20px;
 padding-right: 20px;
 font-size: smaller;
@@ -1026,6 +1026,7 @@ margin: 0px;
     vertical-align: middle;
 }
 
+/* boton productos servicios */
 .seccion__linkProductos{
     margin-top: 30px;
     text-align: center;
@@ -1091,15 +1092,16 @@ font-style: normal;
     font-family: 'Poppins', sans-serif;
 }
 
-.tituloContacto{
-    margin-bottom: 30px;
-}
 
 .contacto__descripcion{
     color: #023E8A;
     margin-bottom: 5px;
     font-weight:600;
     font-family: 'Montserrat', sans-serif;
+}
+
+.tituloContacto{
+    margin-bottom: 30px;
 }
 
 .seccion__infoContactos{
@@ -1157,6 +1159,9 @@ font-style: normal;
     border: 1px;
     border-style: solid;
 }
+
+
+/* formulario contactos */
 
 .formularioContacto{
     margin: auto;
@@ -1249,8 +1254,7 @@ font-style: normal;
 }
 
 .contenedor__destacados{
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .contenedor__destacadosItem{
@@ -1328,7 +1332,7 @@ font-style: normal;
     font-weight: bolder;
 }
 
-.bt__productos{
+/* .bt__productos{
 
     background-color: #023E8A;
     color: white;
@@ -1343,7 +1347,7 @@ font-style: normal;
     cursor: pointer;
     background-color: #03045E;
 
-}
+} */
 
 .seccion__productosDestacados{
     text-align: center;
@@ -1353,8 +1357,7 @@ font-style: normal;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: larger;
-        
+    font-size: larger;     
 }
 
 .seccion__productosPromociones{
