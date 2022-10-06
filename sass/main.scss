@@ -167,6 +167,17 @@ $font-descripcion: 'Montserrat', sans-serif;
 }
 
 
+.titulo__h1{
+    font-family: $font-descripcion;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #023E8A;
+    font-size: x-large;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
 /*CCS PARA LOS TITULOS DE LAS SECCIONES*/
 .tituloSecciones{
     @include titulo-Secciones;
@@ -481,6 +492,9 @@ $font-descripcion: 'Montserrat', sans-serif;
             .footer__li{
                 color: rgb(214, 214, 214);
                 text-decoration: none;
+                &:hover{
+                    color: #0077B6;
+                }
             }
         }        
     }
@@ -1322,6 +1336,11 @@ $font-descripcion: 'Montserrat', sans-serif;
     .header__logo .logo{
         width: 150px;
     }
+
+    .titulo__h1{
+        font-size: large;
+    }
+
     .header .checkbtn .menu_hambur{
         height: 35px;
     }
@@ -1430,6 +1449,17 @@ $font-descripcion: 'Montserrat', sans-serif;
 
     .background-footer .contenedor-footer .footer__listado{
         padding: 0;
+    }
+
+
+    .background-footer .contenedor-footer .footer__sociales li{
+        display: inline;
+        .spam{
+            display: none;
+        }
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
     }
 
     .background-footer .footer__copyrigth{
