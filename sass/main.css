@@ -137,7 +137,7 @@
   gap: 20px;
   text-align: center;
   justify-items: center;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 30px;
 }
 .main__contenedor .main__servicios .contenedor-servicio {
@@ -263,7 +263,7 @@
   padding-right: 40px;
 }
 .seccion__testiminios .carouserTestimonios .contenedor-card-testimonio .card-description p {
-  text-align: justify;
+  text-align: center;
   line-height: 2em;
   font-style: italic;
   font-family: "Montserrat", sans-serif;
@@ -343,7 +343,7 @@
   padding-right: 40px;
 }
 .seccion__testimonio--mobile #carouselExampleIndicators .carousel-inner .carousel-item .contenedor-card-testimonio .card-description p {
-  text-align: justify;
+  text-align: center;
   line-height: 2em;
   font-style: italic;
   font-family: "Montserrat", sans-serif;

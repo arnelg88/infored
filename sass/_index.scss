@@ -132,7 +132,7 @@
         gap: 20px;
         text-align: center;
         justify-items: center;
-        align-items: center;
+        /* align-items: center; */
         margin-top: 30px;
         .contenedor-servicio{
             width: 20%;
@@ -256,7 +256,7 @@
                 padding-left: 10%;
                 padding-right: 40px;
                 p{
-                    text-align: justify;
+                    text-align: center;
                     line-height: 2em;
                     font-style:italic;
                     font-family: $font-descripcion;
@@ -342,7 +342,7 @@
                         padding-left: 10%;
                         padding-right: 40px;
                             p{
-                                text-align: justify;
+                                text-align: center;
                                 line-height: 2em;
                                 font-style:italic;
                                 font-family: $font-descripcion;
