@@ -352,7 +352,7 @@
 /* FIN TESTIMONIOS MOBILE */
 /* INICIO SLIDER CLIENTES STAFF */
 .seccion__clientes {
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0px;
 }
 .seccion__clientes .clientes__slider {
   width: 90vw;
@@ -365,7 +365,7 @@
   display: flex;
   list-style: none;
   animation: scroll 15s linear infinite;
-  -webkit-animation: scroll 15s linear infinite;
+  -webkit-animation: scroll 35s linear infinite;
   width: 3600px;
   margin: 0;
   padding: 0;
@@ -1272,7 +1272,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-900px);
+    transform: translateX(-2700px);
   }
 }
 @keyframes scroll {
@@ -1280,7 +1280,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-900px);
+    transform: translateX(-2700px);
   }
 }
 /* FIN KEYFRAME DEL SCROLL CLIENTES PARTNERS */
