@@ -943,7 +943,7 @@
   justify-content: center;
 }
 .seccion__infoContactos .contenedor__infoContacto .contenedor-informacion {
-  padding: 30px;
+  padding: 20px;
   background-color: rgb(240, 240, 240);
   margin: auto;
 }
@@ -968,8 +968,9 @@
 .seccion__infoContactos .contenedor-mapa .mapa {
   min-height: 300px;
   max-width: 650px;
-  min-width: 380px;
-  border: 1px;
+  min-width: 355px;
+  border: 0px;
+  padding: 10px;
   border-style: solid;
 }
 

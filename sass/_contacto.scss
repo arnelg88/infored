@@ -119,7 +119,7 @@
         flex-wrap: wrap;
         justify-content: center;
         .contenedor-informacion{
-            padding: 30px;
+            padding: 20px;
             background-color: rgb(240, 240, 240);
             margin: auto;
             .contendor-infoItem{
@@ -144,8 +144,9 @@
         .mapa{
             min-height: 300px;
             max-width: 650px;
-            min-width: 380px;
-            border: 1px;
+            min-width: 355px;
+            border: 0px;
+            padding: 10px;
             border-style: solid;
         }
     }
