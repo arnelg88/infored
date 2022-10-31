@@ -18,4 +18,4 @@ Cuenta con 5 paginas de navegación: INICIO, NOSOTROS, SERVICIOS, PRODUCTOS, CON
 - CONTACTOS: En esta página encontrarás la información de contacto de la empresa (teléfonos, mails, dirección), además de un formulario de contacto.
 
 
-### Este repositorio será utilizado para mostrar los conocimientos adquiridos durante el curso de Desarrollo WEB de CoderHouse.
+#### Este repositorio será utilizado para mostrar los conocimientos adquiridos durante el curso de Desarrollo WEB de CoderHouse.
