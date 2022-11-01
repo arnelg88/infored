@@ -447,6 +447,7 @@
 }
 .background-footer .footer__copyrigth .footer-priv:hover {
   cursor: pointer;
+  color: #0077B6;
 }
 
 .svg--footer {
